@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="956" height="434" viewBox="0 0 956 434">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="28" y="36" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">JOIN entre logs e chamados</text>
+  <text x="28" y="62" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5f6368">Google BigQuery • Resultado da consulta</text>
+  <rect x="28" y="86" width="900" height="312" rx="6" fill="#fff" stroke="#dadce0"/><rect x="28" y="86" width="280" height="52" fill="#f8f9fa" stroke="#dadce0"/>
+      <text x="42" y="119" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#3c4043">sistema</text><rect x="308" y="86" width="190" height="52" fill="#f8f9fa" stroke="#dadce0"/>
+      <text x="322" y="119" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#3c4043">logs_vinculados</text><rect x="498" y="86" width="250" height="52" fill="#f8f9fa" stroke="#dadce0"/>
+      <text x="512" y="119" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#3c4043">tempo_medio_resolucao</text><rect x="748" y="86" width="180" height="52" fill="#f8f9fa" stroke="#dadce0"/>
+      <text x="762" y="119" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#3c4043">media_csat</text><rect x="28" y="138" width="280" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="42" y="171" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">Banco Oracle</text><rect x="308" y="138" width="190" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="322" y="171" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">22</text><rect x="498" y="138" width="250" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="512" y="171" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">5.51</text><rect x="748" y="138" width="180" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="762" y="171" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">4.0</text><rect x="28" y="190" width="280" height="52" fill="#fbfbfb" stroke="#dadce0"/>
+        <text x="42" y="223" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">API Clientes</text><rect x="308" y="190" width="190" height="52" fill="#fbfbfb" stroke="#dadce0"/>
+        <text x="322" y="223" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">16</text><rect x="498" y="190" width="250" height="52" fill="#fbfbfb" stroke="#dadce0"/>
+        <text x="512" y="223" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">8.14</text><rect x="748" y="190" width="180" height="52" fill="#fbfbfb" stroke="#dadce0"/>
+        <text x="762" y="223" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">3.69</text><rect x="28" y="242" width="280" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="42" y="275" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">Portal Web</text><rect x="308" y="242" width="190" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="322" y="275" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">15</text><rect x="498" y="242" width="250" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="512" y="275" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">10.2</text><rect x="748" y="242" width="180" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="762" y="275" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">4.13</text><rect x="28" y="294" width="280" height="52" fill="#fbfbfb" stroke="#dadce0"/>
+        <text x="42" y="327" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">Servidor de Impressão</text><rect x="308" y="294" width="190" height="52" fill="#fbfbfb" stroke="#dadce0"/>
+        <text x="322" y="327" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">12</text><rect x="498" y="294" width="250" height="52" fill="#fbfbfb" stroke="#dadce0"/>
+        <text x="512" y="327" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">10.35</text><rect x="748" y="294" width="180" height="52" fill="#fbfbfb" stroke="#dadce0"/>
+        <text x="762" y="327" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">3.75</text><rect x="28" y="346" width="280" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="42" y="379" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">VPN Corporativa</text><rect x="308" y="346" width="190" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="322" y="379" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">6</text><rect x="498" y="346" width="250" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="512" y="379" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">5.18</text><rect x="748" y="346" width="180" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="762" y="379" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">4.67</text><circle cx="916" cy="42" r="11" fill="#34a853"/><path d="M910 42 l4 4 l8 -9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>

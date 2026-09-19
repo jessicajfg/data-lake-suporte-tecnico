@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1211" height="226" viewBox="0 0 1211 226">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="28" y="36" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">Resumo executivo de KPIs</text>
+  <text x="28" y="62" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5f6368">Google BigQuery • Resultado da consulta</text>
+  <rect x="28" y="86" width="1155" height="104" rx="6" fill="#fff" stroke="#dadce0"/><rect x="28" y="86" width="170" height="52" fill="#f8f9fa" stroke="#dadce0"/>
+      <text x="42" y="119" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#3c4043">total_chamados</text><rect x="198" y="86" width="210" height="52" fill="#f8f9fa" stroke="#dadce0"/>
+      <text x="212" y="119" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#3c4043">chamados_finalizados</text><rect x="408" y="86" width="175" height="52" fill="#f8f9fa" stroke="#dadce0"/>
+      <text x="422" y="119" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#3c4043">percentual_sla</text><rect x="583" y="86" width="230" height="52" fill="#f8f9fa" stroke="#dadce0"/>
+      <text x="597" y="119" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#3c4043">tempo_medio_resolucao</text><rect x="813" y="86" width="150" height="52" fill="#f8f9fa" stroke="#dadce0"/>
+      <text x="827" y="119" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#3c4043">csat_medio</text><rect x="963" y="86" width="220" height="52" fill="#f8f9fa" stroke="#dadce0"/>
+      <text x="977" y="119" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#3c4043">percentual_reincidencia</text><rect x="28" y="138" width="170" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="42" y="171" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">200</text><rect x="198" y="138" width="210" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="212" y="171" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">161</text><rect x="408" y="138" width="175" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="422" y="171" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">78.3</text><rect x="583" y="138" width="230" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="597" y="171" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">8.0</text><rect x="813" y="138" width="150" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="827" y="171" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">4.09</text><rect x="963" y="138" width="220" height="52" fill="#ffffff" stroke="#dadce0"/>
+        <text x="977" y="171" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#202124">12.0</text><circle cx="1171" cy="42" r="11" fill="#34a853"/><path d="M1165 42 l4 4 l8 -9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>

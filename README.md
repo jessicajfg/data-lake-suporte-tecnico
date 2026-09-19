@@ -61,7 +61,7 @@ As consultas estão disponíveis em [`sql/analises_suporte_bigquery.sql`](sql/an
 | CSAT médio | 4,09 / 5 |
 | Reincidência | 12% |
 
-![Resumo executivo dos KPIs](imagens/02_kpis_gerais.jpg)
+![Resumo executivo dos KPIs](imagens/02_kpis_gerais.svg)
 
 ## Principais insights
 
@@ -69,25 +69,25 @@ As consultas estão disponíveis em [`sql/analises_suporte_bigquery.sql`](sql/an
 
 A categoria **Banco de Dados** concentrou o maior volume, com **48 ocorrências (24%)**. Apesar disso, a distribuição entre as categorias permaneceu relativamente equilibrada.
 
-![Chamados por categoria](imagens/01_chamados_por_categoria.jpg)
+![Chamados por categoria](imagens/01_chamados_por_categoria.svg)
 
 ### 2. SLA e satisfação
 
 Chamados atendidos **dentro do SLA** apresentaram CSAT médio de **4,26**, enquanto os chamados **fora do SLA** tiveram média de **3,49**. Nesta base simulada, o resultado mostra uma associação entre cumprimento do prazo e maior satisfação do usuário.
 
-![SLA versus CSAT](imagens/03_sla_vs_csat.jpg)
+![SLA versus CSAT](imagens/03_sla_vs_csat.svg)
 
 ### 3. Reincidência
 
 A categoria **Sistema** apresentou a maior taxa de reincidência, com **22,5%**. Em uma operação real, esse resultado justificaria investigação de causa raiz e ações preventivas.
 
-![Reincidência por categoria](imagens/04_reincidencia_por_categoria.jpg)
+![Reincidência por categoria](imagens/04_reincidencia_por_categoria.svg)
 
 ### 4. Integração de logs e chamados
 
 Foi realizado um `JOIN` entre logs técnicos e chamados de suporte, permitindo relacionar eventos de sistemas com tempo de resolução e satisfação. O **Banco Oracle** concentrou o maior número de logs vinculados, enquanto o **Servidor de Impressão** apresentou o maior tempo médio de resolução.
 
-![JOIN entre logs e chamados](imagens/05_join_logs_chamados.jpg)
+![JOIN entre logs e chamados](imagens/05_join_logs_chamados.svg)
 
 ## Estrutura do repositório
 

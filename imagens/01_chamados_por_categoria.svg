@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="40" y="42" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#202124">Chamados por categoria</text>
+  <text x="40" y="70" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5f6368">Google BigQuery • Visualização</text><line x1="90" y1="470" x2="1360" y2="470" stroke="#e0e0e0"/>
+    <text x="72" y="475" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5f6368">0</text><line x1="90" y1="396" x2="1360" y2="396" stroke="#e0e0e0"/>
+    <text x="72" y="401" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5f6368">10</text><line x1="90" y1="322" x2="1360" y2="322" stroke="#e0e0e0"/>
+    <text x="72" y="327" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5f6368">20</text><line x1="90" y1="248" x2="1360" y2="248" stroke="#e0e0e0"/>
+    <text x="72" y="253" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5f6368">30</text><line x1="90" y1="174" x2="1360" y2="174" stroke="#e0e0e0"/>
+    <text x="72" y="179" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5f6368">40</text><line x1="90" y1="100" x2="1360" y2="100" stroke="#e0e0e0"/>
+    <text x="72" y="105" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5f6368">50</text><rect x="90" y="114.80000000000001" width="218.8" height="355.2" rx="3" fill="#1a73e8"/>
+    <text x="199.4" y="104.80000000000001" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#202124">48</text>
+    <text x="199.4" y="502" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5f6368">Banco de Dados</text><rect x="352.8" y="174" width="218.8" height="296" rx="3" fill="#1a73e8"/>
+    <text x="462.20000000000005" y="164" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#202124">40</text>
+    <text x="462.20000000000005" y="502" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5f6368">Sistema</text><rect x="615.6" y="181.39999999999998" width="218.8" height="288.6" rx="3" fill="#1a73e8"/>
+    <text x="725" y="171.39999999999998" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#202124">39</text>
+    <text x="725" y="502" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5f6368">Impressão</text><rect x="878.4000000000001" y="196.2" width="218.8" height="273.8" rx="3" fill="#1a73e8"/>
+    <text x="987.8000000000001" y="186.2" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#202124">37</text>
+    <text x="987.8000000000001" y="502" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5f6368">Rede</text><rect x="1141.2" y="203.60000000000002" width="218.8" height="266.4" rx="3" fill="#1a73e8"/>
+    <text x="1250.6000000000001" y="193.60000000000002" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#202124">36</text>
+    <text x="1250.6000000000001" y="502" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5f6368">Acesso</text><circle cx="1356" cy="46" r="12" fill="#34a853"/><path d="M1350 46 l4 4 l8 -9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
