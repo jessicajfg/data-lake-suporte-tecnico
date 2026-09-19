@@ -1,60 +1,54 @@
 # Análise de Chamados de Suporte Técnico com Google BigQuery
 
-Projeto de portfólio que simula uma operação de **Service Desk**, integrando dados fictícios de chamados e logs técnicos para analisar indicadores de atendimento, SLA, reincidência, satisfação e comportamento dos sistemas.
+Projeto de portfólio que simula uma operação de **Service Desk**, integrando duas fontes de dados fictícias — chamados de suporte e logs técnicos — para analisar SLA, tempo de resolução, reincidência, satisfação do usuário e comportamento dos sistemas.
 
-> **Observação:** todos os dados utilizados neste projeto são fictícios e foram criados exclusivamente para fins de estudo e portfólio.
+> **Importante:** todos os dados são sintéticos e foram criados exclusivamente para estudo e portfólio. Nenhuma informação de empresa ou cliente real é utilizada.
 
 ## Objetivo
 
 O projeto foi desenvolvido para praticar conceitos de **Big Data, armazenamento e análise de dados em nuvem**, aplicando-os a um cenário próximo de uma operação real de Suporte Técnico.
 
-A proposta foi carregar e organizar diferentes fontes de dados no Google BigQuery, realizar consultas SQL, acompanhar indicadores de Service Desk, relacionar dados técnicos com a experiência do usuário e identificar padrões que possam apoiar ações de melhoria contínua.
+A proposta foi trabalhar com múltiplas fontes de dados, organizar os dados no Google BigQuery, utilizar SQL para análise operacional, acompanhar indicadores de Service Desk, relacionar eventos técnicos com chamados e transformar resultados em insights de melhoria contínua.
 
-## Arquitetura do projeto
+## Arquitetura
 
 ```mermaid
 flowchart LR
-    A[chamados_suporte.csv] --> C[Google BigQuery Sandbox]
-    B[logs_sistema.csv] --> C
+    A[Chamados de suporte - CSV] --> C[Google BigQuery Sandbox]
+    B[Logs técnicos - CSV] --> C
     C --> D[Consultas SQL]
     D --> E[KPIs e análises]
     E --> F[Insights de Service Desk]
 ```
 
-Nesta implementação, os arquivos CSV foram carregados diretamente no **BigQuery Sandbox**, permitindo desenvolver o projeto sem ativar faturamento no Google Cloud.
+Nesta implementação, os arquivos CSV foram carregados diretamente no **BigQuery Sandbox**, permitindo executar o projeto sem ativar faturamento no Google Cloud.
 
 ## Fontes de dados
 
+Os dados podem ser reproduzidos executando [`scripts/gerar_dados.py`](scripts/gerar_dados.py).
+
 ### Chamados de suporte
 
-A base `chamados_suporte.csv` contém **200 chamados fictícios**, com informações sobre categoria, prioridade, canal, nível de atendimento, status, SLA, tempo de resolução, reincidência e CSAT.
+O script gera **200 chamados fictícios** com categoria, assunto, prioridade, canal, nível de atendimento, status, SLA, tempo de resolução, reincidência e CSAT.
 
 ### Logs técnicos
 
-A base `logs_sistema.csv` contém **300 eventos fictícios**, incluindo sistema, severidade, tipo de evento, mensagem, origem, status e vínculo com chamados. Parte dos logs possui um `id_chamado`, permitindo relacionar as duas fontes com `JOIN`.
+Também são gerados **300 eventos fictícios** contendo sistema, severidade, tipo de evento, mensagem, origem, status e vínculo com chamado quando aplicável. Parte dos eventos possui um `id_chamado`, permitindo integrar as duas fontes com `JOIN`.
 
 ## Tecnologias utilizadas
 
 - **Google BigQuery Sandbox**
 - **SQL**
+- **Python** para geração dos dados sintéticos
 - **CSV**
 - **GitHub**
 - Conceitos de **Service Desk / ITSM**
 
-## Principais análises
+## Análises realizadas
 
-- volume de chamados por categoria e prioridade;
-- cumprimento de SLA por prioridade;
-- tempo médio de resolução;
-- reincidência por categoria;
-- relação entre SLA e CSAT;
-- impacto da reincidência na satisfação;
-- distribuição dos logs por severidade;
-- erros e eventos críticos por sistema;
-- integração entre logs e chamados com `JOIN`;
-- resumo executivo de KPIs.
+As consultas estão disponíveis em [`sql/analises_suporte_bigquery.sql`](sql/analises_suporte_bigquery.sql) e incluem volume por categoria e prioridade, SLA, tempo médio de resolução, reincidência, relação entre SLA e CSAT, análise de logs, `JOIN` entre fontes e resumo executivo de KPIs.
 
-As consultas estão disponíveis em [`sql/analises_suporte_bigquery.sql`](sql/analises_suporte_bigquery.sql).
+> Para reproduzir as consultas em outro projeto do BigQuery, substitua o ID `data-lake-suporte-jessica` pelo ID do seu próprio projeto.
 
 ## Principais indicadores
 
@@ -67,69 +61,71 @@ As consultas estão disponíveis em [`sql/analises_suporte_bigquery.sql`](sql/an
 | CSAT médio | 4,09 / 5 |
 | Reincidência | 12% |
 
-![Resumo executivo dos KPIs](imagens/02_kpis_gerais.png)
+![Resumo executivo dos KPIs](imagens/02_kpis_gerais.jpg)
 
-## Insights encontrados
+## Principais insights
 
 ### 1. Distribuição dos chamados
 
-A categoria **Banco de Dados** concentrou o maior volume de chamados, com **48 ocorrências (24%)**, embora a distribuição entre as categorias tenha permanecido relativamente equilibrada.
+A categoria **Banco de Dados** concentrou o maior volume, com **48 ocorrências (24%)**. Apesar disso, a distribuição entre as categorias permaneceu relativamente equilibrada.
 
-![Chamados por categoria](imagens/01_chamados_por_categoria.png)
+![Chamados por categoria](imagens/01_chamados_por_categoria.jpg)
 
-### 2. SLA e satisfação do usuário
+### 2. SLA e satisfação
 
-Chamados atendidos **dentro do SLA** apresentaram CSAT médio de **4,26**, enquanto os atendidos **fora do SLA** tiveram média de **3,49**. Nesta base simulada, o resultado mostra associação entre cumprimento de prazo e maior satisfação do usuário.
+Chamados atendidos **dentro do SLA** apresentaram CSAT médio de **4,26**, enquanto os chamados **fora do SLA** tiveram média de **3,49**. Nesta base simulada, o resultado mostra uma associação entre cumprimento do prazo e maior satisfação do usuário.
 
-![SLA versus CSAT](imagens/03_sla_vs_csat.png)
+![SLA versus CSAT](imagens/03_sla_vs_csat.jpg)
 
 ### 3. Reincidência
 
-A categoria **Sistema** apresentou a maior taxa de reincidência, com **22,5%**, indicando um ponto que mereceria investigação de causa raiz em uma operação real.
+A categoria **Sistema** apresentou a maior taxa de reincidência, com **22,5%**. Em uma operação real, esse resultado justificaria investigação de causa raiz e ações preventivas.
 
-![Reincidência por categoria](imagens/04_reincidencia_por_categoria.png)
+![Reincidência por categoria](imagens/04_reincidencia_por_categoria.jpg)
 
-### 4. Integração entre logs e chamados
+### 4. Integração de logs e chamados
 
-Foi realizado um `JOIN` entre os eventos técnicos e os chamados de suporte. O **Banco Oracle** concentrou o maior número de logs vinculados, enquanto o **Servidor de Impressão** apresentou o maior tempo médio de resolução entre os sistemas analisados.
+Foi realizado um `JOIN` entre logs técnicos e chamados de suporte, permitindo relacionar eventos de sistemas com tempo de resolução e satisfação. O **Banco Oracle** concentrou o maior número de logs vinculados, enquanto o **Servidor de Impressão** apresentou o maior tempo médio de resolução.
 
-![Join entre logs e chamados](imagens/05_join_logs_chamados.png)
+![JOIN entre logs e chamados](imagens/05_join_logs_chamados.jpg)
 
 ## Estrutura do repositório
 
 ```text
 data-lake-suporte-tecnico/
 ├── README.md
-├── dados/
-│   ├── chamados_suporte.csv
-│   └── logs_sistema.csv
-├── sql/
-│   └── analises_suporte_bigquery.sql
-└── imagens/
-    ├── 01_chamados_por_categoria.png
-    ├── 02_kpis_gerais.png
-    ├── 03_sla_vs_csat.png
-    ├── 04_reincidencia_por_categoria.png
-    └── 05_join_logs_chamados.png
+├── imagens/
+│   ├── 01_chamados_por_categoria.jpg
+│   ├── 02_kpis_gerais.jpg
+│   ├── 03_sla_vs_csat.jpg
+│   ├── 04_reincidencia_por_categoria.jpg
+│   └── 05_join_logs_chamados.jpg
+├── scripts/
+│   └── gerar_dados.py
+└── sql/
+    └── analises_suporte_bigquery.sql
 ```
 
 ## Como reproduzir
 
-1. Criar um projeto no Google Cloud e acessar o **BigQuery Sandbox**.
-2. Criar um dataset.
-3. Fazer upload dos dois arquivos CSV disponíveis em `dados/`.
-4. Criar as tabelas `chamados_suporte` e `logs_sistema`.
-5. Executar as consultas disponíveis em `sql/analises_suporte_bigquery.sql`.
-6. Analisar os resultados e indicadores.
+1. Clone ou baixe este repositório.
+2. Execute `python scripts/gerar_dados.py`.
+3. O script criará localmente `dados/chamados_suporte.csv` e `dados/logs_sistema.csv`.
+4. Acesse o **Google BigQuery Sandbox** e crie um dataset.
+5. Faça upload dos dois CSVs e crie as tabelas `chamados_suporte` e `logs_sistema`.
+6. Ajuste o ID do projeto nas consultas SQL, se necessário.
+7. Execute as consultas de [`sql/analises_suporte_bigquery.sql`](sql/analises_suporte_bigquery.sql).
 
 ## Competências praticadas
 
 - SQL aplicado à análise de dados;
 - agregações com `COUNT`, `AVG` e `COUNTIF`;
-- tratamento seguro de divisões com `SAFE_DIVIDE`;
+- cálculo de indicadores com `SAFE_DIVIDE`;
 - integração de fontes com `JOIN`;
-- análise de SLA, CSAT e reincidência;
+- análise de SLA, CSAT, reincidência e tempo de resolução;
 - interpretação de indicadores de Service Desk;
+- análise de logs técnicos;
+- geração de dados sintéticos com Python;
 - documentação técnica;
 - análise de dados em ambiente cloud.
 
